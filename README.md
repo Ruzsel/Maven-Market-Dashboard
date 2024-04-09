@@ -132,3 +132,70 @@ Connecting & Shaping the Data Finish
 - In the Stores table, categorize "store_city" as City, "store_state" as State or Province, "store_country" as Country/Region, and "full_address" as Address
 
 ![Creating Data Model Fix](https://github.com/Ruzsel/Maven-Market-Dashboard/assets/150054552/5de3b2f1-d47f-435f-b91e-4b967393e3ac)
+
+# Adding DAX Measures
+Please Feel Free to check all DAX that i had been create in this power bi file but, in developing the dashboard I will only display the DAX measures used in my dashboard report because if I were to display all the DAX measures, this section would become very long. Here are some of the DAX measures I used in my dashboard:
+
+```DAX
+Last Month Transactions = CALCULATE([Total Transactions], PREVIOUSMONTH('Calendar'[date]))
+```
+```DAX
+Total Transactions = COUNTROWS(Transaction_data)
+```
+```DAX
+Last Month Profit = CALCULATE([Total Profit], PREVIOUSMONTH('Calendar'[date]))
+```
+```DAX
+Total Profit = [Total Revenue] - [Total Cost]
+```
+```DAX
+Last Month Returns = CALCULATE([Total Returns], PREVIOUSMONTH('Calendar'[date]))
+```
+```DAX
+Total Returns = COUNTROWS(Return_data)
+```
+```DAX
+Total Revenue = 
+    SUMX(
+        Transaction_Data,
+        Transaction_Data[quantity] * RELATED(Products[product_retail_price])
+    )
+```
+```DAX
+Total Cost = 
+    SUMX(
+        Transaction_Data,
+        Transaction_Data[quantity] * RELATED(Products[product_cost])
+    )
+```
+```DAX
+Return Rate = DIVIDE([Quantity Returned], [Quantity Sold], 0)
+```
+```DAX
+Profit Margin = DIVIDE([Total Profit], [Total Revenue], 0)
+```
+```DAX
+Average Transaction per Customer = 
+DIVIDE(
+    [Total Transactions], 
+    [Total Customers]
+)
+```
+```DAX
+Average Revenue per Customer = 
+DIVIDE(
+    [Total Revenue], 
+    [Total Customers]
+)
+```
+```DAX
+Total Customers = 
+DISTINCTCOUNT(
+    'Customers'[customer_id]
+)
+```
+
+# Building the Report
+![Topline Dash](https://github.com/Ruzsel/Maven-Market-Dashboard/assets/150054552/d3da7446-8e2d-49cc-8140-77240cdb28de)
+![Store Dash](https://github.com/Ruzsel/Maven-Market-Dashboard/assets/150054552/7b3dd709-be17-4484-9a1c-88c35f3ca36c)
+![Customer dash](https://github.com/Ruzsel/Maven-Market-Dashboard/assets/150054552/f36ccce7-14ba-4b90-87d0-85d80937ed56)
