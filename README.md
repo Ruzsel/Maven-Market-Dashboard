@@ -106,3 +106,29 @@ Start of Week (starting Sunday), Name of Day, Start of Month, Name of Month, Qua
 
 With the exception of the two data tables("return_data", "transaction_data", disabling "Include in Report Refresh"
 Connecting & Shaping the Data Finish
+
+# Creating the Data Model
+1. In the MODEL view, arrange tables with the lookup tables above the data tables
+
+- Connect Transaction_Data to Customers, Products, and Stores using valid primary/foreign keys 
+- Connect Transaction_Data to Calendar using both date fields, with an inactive "stock_date" relationship
+- Connect Return_Data to Products, Calendar, and Stores using valid primary/foreign keys
+- Connect Stores to Regions as a "snowflake" schema
+
+2. Confirm the following:
+
+- All relationships follow one-to-many cardinality, with primary keys (1) on the lookup side and foreign keys (*) on the data side
+- Filters are all one-way (no two-way filters)
+- Filter context flows "downstream" from lookup tables to data tables
+- Data tables are connected via shared lookup tables (not directly to each other)
+
+3. Hide all foreign keys in both data tables from Report View, as well as "region_id" from the Stores table
+
+4. In the DATA view:
+
+- Update all date fields (across all tables) to the "M/d/yyyy" format using the formatting tools in the Modeling tab
+- Update "product_retail_price", "product_cost", and "discount_price" to Currency ($ English) format
+- In the Customers table, categorize "customer_city" as City, "customer_postal_code" as Postal Code, and "customer_country" as Country/Region
+- In the Stores table, categorize "store_city" as City, "store_state" as State or Province, "store_country" as Country/Region, and "full_address" as Address
+
+![Creating Data Model Fix](https://github.com/Ruzsel/Maven-Market-Dashboard/assets/150054552/5de3b2f1-d47f-435f-b91e-4b967393e3ac)
