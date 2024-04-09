@@ -22,7 +22,14 @@ The project explores the sales performance analysis of "Maven Market". The prima
 The analysis will involve connecting and processing sales data from various Maven Market stores, creating data models to facilitate analysis, and utilizing advanced analytics techniques to derive actionable insights. The project will leverage tools such as Power BI for data visualization and statistical analysis.
 
 ### Expected Outcomes:
-By the end of the project, we aim to provide Maven Market with actionable insights and recommendations to optimize sales performance, enhance customer satisfaction, and drive overall business growth.
+By the end of the project, we aim to provide Maven Market Dashboard to optimize sales performance, enhance customer satisfaction, and drive overall business growth.
+
+### Table of Contents
+- [Connecting and Shaping the data](#connecting--shaping-the-data)
+- [Creating Data Model](#creating-the-data-model)
+- [Adding DAX measures](#adding-dax-measures)
+- [Building Report](#building-the-report)
+- [Interactive Dashboard](#interactive-dashboard)
 
 # Connecting & Shaping the Data
 Create and shaping :
@@ -199,3 +206,6 @@ DISTINCTCOUNT(
 ![Topline Dash](https://github.com/Ruzsel/Maven-Market-Dashboard/assets/150054552/d3da7446-8e2d-49cc-8140-77240cdb28de)
 ![Store Dash](https://github.com/Ruzsel/Maven-Market-Dashboard/assets/150054552/7b3dd709-be17-4484-9a1c-88c35f3ca36c)
 ![Customer dash](https://github.com/Ruzsel/Maven-Market-Dashboard/assets/150054552/f36ccce7-14ba-4b90-87d0-85d80937ed56)
+
+# Interactive Dashboard
+[Power Bi Link](https://app.powerbi.com/view?r=eyJrIjoiZmMzZDZhNzAtNTY2My00ZGMyLWE4OTYtZjE0M2VkY2U4MmFmIiwidCI6IjUwODkxNmEwLTdiODktNDNhMS1hZjRlLTcyZmUxNWFiYTViOSIsImMiOjEwfQ%3D%3D&pageName=ReportSection)
