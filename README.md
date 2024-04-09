@@ -26,7 +26,14 @@ By the end of the project, we aim to provide Maven Market with actionable insigh
 
 # Connecting & Shaping the Data
 Create and shaping :
-- (Customers Table)[#customers-table]
+- [Customers Table](#customers-table)
+- [Products Table](#products-table)
+- [Stores Table](#stores-table)
+- [Regions Table](#regions-table)
+- [Calendar Table](#calendar-table)
+- [Return_data Table](#return_data-table)
+- [Transaction_data Table](#transaction_data-table)
+
 ### Customers Table
 - Name the table "Customers", and make sure that headers have been promoted
 - Confirm that data types are accurate (Note: "customer_id" should be whole numbers, and both "customer_acct_num" and "customer_postal_code" should be text)
