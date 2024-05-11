@@ -205,7 +205,7 @@ DISTINCTCOUNT(
 # Building the Report
 ![Topline Dash](https://github.com/Ruzsel/Maven-Market-Dashboard/assets/150054552/d3da7446-8e2d-49cc-8140-77240cdb28de)
 ![Store Dash](https://github.com/Ruzsel/Maven-Market-Dashboard/assets/150054552/7b3dd709-be17-4484-9a1c-88c35f3ca36c)
-![Customer dash](https://github.com/Ruzsel/Maven-Market-Dashboard/assets/150054552/f36ccce7-14ba-4b90-87d0-85d80937ed56)
+![image](https://github.com/Ruzsel/Maven-Market-Dashboard/assets/150054552/c2abc671-521f-453a-9fad-faeeaaec0043)
 
 # Interactive Dashboard
 [Power Bi Link](https://app.powerbi.com/view?r=eyJrIjoiMjU1MmIyOGMtMzE3Yy00MzE3LTg3YTgtYjcxMzFjMmQ0MWRkIiwidCI6IjUwODkxNmEwLTdiODktNDNhMS1hZjRlLTcyZmUxNWFiYTViOSIsImMiOjEwfQ%3D%3D)
