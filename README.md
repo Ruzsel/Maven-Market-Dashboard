@@ -208,4 +208,4 @@ DISTINCTCOUNT(
 ![Customer dash](https://github.com/Ruzsel/Maven-Market-Dashboard/assets/150054552/f36ccce7-14ba-4b90-87d0-85d80937ed56)
 
 # Interactive Dashboard
-[Power Bi Link](https://app.powerbi.com/view?r=eyJrIjoiZmMzZDZhNzAtNTY2My00ZGMyLWE4OTYtZjE0M2VkY2U4MmFmIiwidCI6IjUwODkxNmEwLTdiODktNDNhMS1hZjRlLTcyZmUxNWFiYTViOSIsImMiOjEwfQ%3D%3D&pageName=ReportSection)
+[Power Bi Link](https://app.powerbi.com/view?r=eyJrIjoiMjU1MmIyOGMtMzE3Yy00MzE3LTg3YTgtYjcxMzFjMmQ0MWRkIiwidCI6IjUwODkxNmEwLTdiODktNDNhMS1hZjRlLTcyZmUxNWFiYTViOSIsImMiOjEwfQ%3D%3D)
