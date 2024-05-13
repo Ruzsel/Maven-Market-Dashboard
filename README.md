@@ -216,7 +216,7 @@ RETURN
 [Power Bi Link](https://app.powerbi.com/view?r=eyJrIjoiNDY2ZWRjNTgtZjI2Ni00NmE0LTg1NTEtMjRmMjBjOWE3YzI3IiwidCI6IjUwODkxNmEwLTdiODktNDNhMS1hZjRlLTcyZmUxNWFiYTViOSIsImMiOjEwfQ%3D%3D)
 
 # Findings
-1. What are the top 10 products in each country based on profit?
+## 1. What are the top 10 products in each country based on profit?
 
 USA :
 
@@ -265,7 +265,7 @@ CANADA :
 | Big Time      | 356                | $1,523       | 60.40%        | 1.67%       |
 | High Quality  | 320                | $1,485       | 60.47%        | 1.34%       |
 
-2. How are overall total transactions, total profit, profit margin, and return rate in each country?
+## 2. How are overall total transactions, total profit, profit margin, and return rate in each country?
 
 USA : 
 
@@ -285,7 +285,7 @@ CANADA :
 |---------|--------------------|--------------|---------------|-------------|
 | Canada  | 16,091             | $64,341      | 59.76%        | 1.07%       |
 
-3. How do the transactions, profit, and return compare between this month and the previous month in each country?
+## 3. How do the transactions, profit, and return compare between this month and the previous month in each country?
 
 | Country | Current Month Transactions | Target Transactions | % Difference | Current Month Profit | Target Profit | % Difference | Current Month Return | Target Return | % Difference |
 |---------|---------------------------|---------------------|--------------|----------------------|---------------|--------------|----------------------|---------------|--------------|
@@ -293,7 +293,7 @@ CANADA :
 | MEXICO  | 7,350                     | 5,727               | +28.34%      | $28,976              | $22,306       | +29.9%       | 198                  | 155           | -27.74%      |
 | CANADA  | 1,459                     | 1,518               | -3.89%       | $5,798               | $6,128        | -5.39%       | 42                   | 59            | +28.81%      |
 
-4. Which store has the best overall performance in each country?
+## 4. Which store has the best overall performance in each country?
 
 USA : 
 
