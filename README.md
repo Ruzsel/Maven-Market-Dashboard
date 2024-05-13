@@ -4,31 +4,33 @@ In this project, I have taken a series of critical steps in developing the Power
 Maven Market Sales Performance Analysis
 The project explores the sales performance analysis of "Maven Market". The primary objective of this project is to gain insights into the overall topline performance of "Maven Market".
 
-### Objective
+## Objective
 
 The objective of this analysis is to evaluate the effectiveness of your "Topline Performance" dashboard in Power BI. We will identify areas for improvement to ensure it provides actionable insights for data-driven decision making.
 
-### User Story:
+## User Story:
 
 As the Head of Business Strategy at Maven Market, I need to understand our company's overall sales performance to formulate effective strategies and drive growth. Therefore, I request the assistance of our data analyst to analyze the "Topline Performance" dashboard.
 
-### Dashboard Components Review
+## Dashboard Components Review
 The current dashboard includes the following components:
 - Current Month Metrics: Transactions, Profit, and Return
 - Product Brand Matrix: Transactions, Profit, Profit Margin, and Return Rate by Brand
-- Monthly Revenue Trend
-- Revenue vs Target Gauge
+- Revenue Trend
+- Monthly Revenue vs Target Gauge
 - Store Map Chart with Tooltips: Transactions, Profit, Cost, Return, Revenue, Return Rate, Quantity Sold, and Quantity Returned by Store
 - Area Heatmap with Tooltips: Same metrics as Store Map but group by Area(Country, State, City)
-### Expected Outcomes:
+## Expected Outcomes:
 By the end of the project, i aim to provide Maven Market Dashboard to optimize sales performance, and drive overall business growth.
 
-### Table of Contents
+## Table of Contents
 - [Connecting and Shaping the data](#connecting--shaping-the-data)
 - [Creating Data Model](#creating-the-data-model)
 - [Adding DAX measures](#adding-dax-measures)
-- [Building Report](#building-the-report)
+- [Building Dashboard](#building-the-dashboard)
 - [Interactive Dashboard](#interactive-dashboard)
+- [Findings](#findings)
+- [Insight and Business Solutions](#insights-and-business-solutions)
 
 # Connecting & Shaping the Data
 Create and shaping :
@@ -207,7 +209,133 @@ RETURN
     PreviousMonthRevenue * 1.05
 ```
 
-# Building the Report
-![1998 Dashboard](https://github.com/Ruzsel/Maven-Market-Dashboard/assets/150054552/76ea783a-fea2-475d-bd97-d4e10550f4bd)
-# Interactive Dashboard
+## Building the Dashboard
+![image](https://github.com/Ruzsel/Maven-Market-Dashboard/assets/150054552/dcbe7605-e799-4096-aabc-c12e5a9f9948)
+
+## Interactive Dashboard
 [Power Bi Link](https://app.powerbi.com/view?r=eyJrIjoiNDY2ZWRjNTgtZjI2Ni00NmE0LTg1NTEtMjRmMjBjOWE3YzI3IiwidCI6IjUwODkxNmEwLTdiODktNDNhMS1hZjRlLTcyZmUxNWFiYTViOSIsImMiOjEwfQ%3D%3D)
+
+# Findings
+1. What are the top 10 products in each country based on profit?
+
+USA :
+
+| Product Brand | Total Transactions | Total Profit | Profit Margin | Return Rate |
+|---------------|--------------------|--------------|---------------|-------------|
+| Hermanos      | 2,796              | $11,233      | 58.71%        | 0.95%       |
+| Ebony         | 2,657              | $10,224      | 59.84%        | 0.78%       |
+| Tell Tale     | 2,642              | $10,168      | 58.01%        | 0.96%       |
+| Tri-State     | 2,597              | $10,130      | 58.64%        | 1.07%       |
+| High Top      | 2,537              | $10,006      | 60.46%        | 0.80%       |
+| Nationeel     | 2,319              | $9,642       | 60.43%        | 1.15%       |
+| Best Choice   | 2,206              | $9,510       | 60.88%        | 0.79%       |
+| Horatio       | 2,124              | $8,911       | 58.35%        | 1.44%       |
+| High Quality  | 1,893              | $8,416       | 59.98%        | 1.20%       |
+| Red Wing      | 2,027              | $8,377       | 59.32%        | 1.02%       |
+
+
+MEXICO :
+
+| Product Brand | Total Transactions | Total Profit | Profit Margin | Return Rate |
+|---------------|--------------------|--------------|---------------|-------------|
+| Hermanos      | 2,096              | $8,622       | 58.53%        | 0.98%       |
+| Ebony         | 2,079              | $8,177       | 59.78%        | 1.09%       |
+| Tri-State     | 2,049              | $8,089       | 59.23%        | 1.17%       |
+| Tell Tale     | 2,036              | $8,088       | 58.11%        | 1.01%       |
+| High Top      | 1,954              | $7,993       | 60.31%        | 1.20%       |
+| Nationeel     | 1,710              | $7,301       | 60.42%        | 1.19%       |
+| Best Choice   | 1,657              | $7,244       | 60.35%        | 0.75%       |
+| Horatio       | 1,699              | $7,224       | 58.46%        | 1.13%       |
+| Fast          | 1,650              | $6,754       | 60.86%        | 1.20%       |
+| Denny         | 1,503              | $6,709       | 58.04%        | 0.93%       |
+
+
+CANADA :
+
+| Product Brand | Total Transactions | Total Profit | Profit Margin | Return Rate |
+|---------------|--------------------|--------------|---------------|-------------|
+| Ebony         | 502                | $1,953       | 59.80%        | 1.32%       |
+| Hermanos      | 450                | $1,898       | 58.75%        | 0.79%       |
+| High Top      | 449                | $1,811       | 60.76%        | 1.34%       |
+| Tri-State     | 453                | $1,760       | 58.99%        | 0.98%       |
+| Tell Tale     | 434                | $1,727       | 57.98%        | 1.09%       |
+| Nationeel     | 379                | $1,674       | 60.58%        | 1.34%       |
+| Horatio       | 372                | $1,601       | 58.56%        | 0.85%       |
+| Best Choice   | 355                | $1,601       | 60.53%        | 1.15%       |
+| Big Time      | 356                | $1,523       | 60.40%        | 1.67%       |
+| High Quality  | 320                | $1,485       | 60.47%        | 1.34%       |
+
+2. How are overall total transactions, total profit, profit margin, and return rate in each country?
+
+USA : 
+
+| Country         | Total Transactions | Total Profit | Profit Margin | Return Rate |
+|-----------------|--------------------|--------------|---------------|-------------|
+| USA             | 93,986             | $365,665     | 59.68%        | 0.97%       |
+
+MEXICO :
+
+| Country | Total Transactions | Total Profit | Profit Margin | Return Rate |
+|---------|--------------------|--------------|---------------|-------------|
+| Mexico  | 72,806             | $285,687     | 59.65%        | 1.02%       |
+
+CANADA : 
+
+| Country | Total Transactions | Total Profit | Profit Margin | Return Rate |
+|---------|--------------------|--------------|---------------|-------------|
+| Canada  | 16,091             | $64,341      | 59.76%        | 1.07%       |
+
+3. How do the transactions, profit, and return compare between this month and the previous month in each country?
+
+| Country | Current Month Transactions | Target Transactions | % Difference | Current Month Profit | Target Profit | % Difference | Current Month Return | Target Return | % Difference |
+|---------|---------------------------|---------------------|--------------|----------------------|---------------|--------------|----------------------|---------------|--------------|
+| USA     | 9,516                     | 10,094              | -5.73%       | $36,909              | $39,438       | -6.41%       | 256                  | 268           | +4.48%       |
+| MEXICO  | 7,350                     | 5,727               | +28.34%      | $28,976              | $22,306       | +29.9%       | 198                  | 155           | -27.74%      |
+| CANADA  | 1,459                     | 1,518               | -3.89%       | $5,798               | $6,128        | -5.39%       | 42                   | 59            | +28.81%      |
+
+4. Which store has the best overall performance in each country?
+
+USA : 
+
+| Store City | Total Transactions | Total Revenue | Total Cost | Total Profit | Total Returns | Return Rate | Quantity Sold | Quantity Returned |
+|------------|--------------------|---------------|------------|--------------|---------------|-------------|---------------|-------------------|
+| Salem      | 12,518             | $83,181       | $33,492    | $49,689      | 321           | 0.94%       | 39,182        | 367               |
+
+MEXICO : 
+
+| Store City | Total Transactions | Total Revenue | Total Cost | Total Profit | Total Returns | Return Rate | Quantity Sold | Quantity Returned |
+|------------|--------------------|---------------|------------|--------------|---------------|-------------|---------------|-------------------|
+| Hidalgo    | 110,798            | $44,692       | $44,692    | $66,106      | 491           | 1.08%       | 52,888        | 572               |
+
+CANADA : 
+
+| Store City | Total Transactions | Total Revenue | Total Cost | Total Profit | Total Returns | Return Rate | Quantity Sold | Quantity Returned |
+|------------|--------------------|---------------|------------|--------------|---------------|-------------|---------------|-------------------|
+| Vancouver  | 12,770             | $85,262       | $34,307    | $50,955      | 359           | 1.05%       | 40,152        | 420               |
+
+# Insights and Business solutions
+### Insights and Business Solutions for the United States (USA):
+- Top 10 Products by Profit: Brands like Hermanos, Ebony, and Tell Tale have performed well in generating high profits with healthy margins and low return rates. Marketing and sales strategies can be reinforced to maintain and increase sales of these products.
+
+- Comparison of This Month's Performance with the Previous Month: Despite a roughly 6% decrease in both transaction volume and profit this month compared to the previous month, the return rate remains stable. There may be opportunities to enhance marketing strategies or provide incentives to customers to boost transaction volume and profit.
+
+- Top-Performing Store: The store in Salem has shown outstanding performance with high total transactions, significant profit, and low return rates. Further analysis of sales strategies, store locations, and inventory management can provide additional insights to improve the performance of other stores.
+
+### Insights and Business Solutions for Mexico:
+- Top 10 Products by Profit: Profit patterns mirror those seen in the US, with brands like Hermanos and Ebony dominating. Companies can continue to focus on these products and expand marketing strategies to increase market share.
+
+- Comparison of This Month's Performance with the Previous Month: There's been a significant increase in transaction volume and profit this month compared to the previous month, although the return rate has decreased. This indicates significant growth potential in the market.
+
+- Top-Performing Store: The store in Hidalgo demonstrates outstanding performance with high transaction volume and significant profit. Further analysis of factors contributing to good store performance can be used to enhance the performance of other stores.
+
+### Insights and Business Solutions for Canada:
+- Top 10 Products by Profit: Although Canada has lower total transactions compared to the US and Mexico, profit patterns are similar, with brands like Ebony and Hermanos dominating. Companies can continue to focus on these brands to increase profitability.
+
+- Comparison of This Month's Performance with the Previous Month: There's been a slight decrease in transaction volume and profit this month compared to the previous month. However, the return rate has significantly decreased, indicating an improvement in customer satisfaction or efficiency in return management.
+
+- Top-Performing Store: The store in Vancouver exhibits good performance with high transaction volume and significant profit. Further analysis of factors contributing to good store performance can be used to enhance the performance of other stores in Canada.
+
+### General Business Solutions:
+- Increased Marketing and Promotion: Based on the data showing a decrease in transactions in the United States and Canada, there are opportunities to increase marketing and promotion efforts to attract more customers and boost sales.
+- Inventory Management Optimization: Further analysis of sales patterns and demand can help optimize inventory management to reduce costs and increase profitability.
+- Enhanced Customer Experience: Focusing on improving the customer experience can help retain existing customers and attract new ones. This may include better customer service, more flexible return policies, and overall optimization of the purchasing process.
