@@ -210,4 +210,4 @@ RETURN
 # Building the Report
 ![Dashboard](https://github.com/Ruzsel/Maven-Market-Dashboard/assets/150054552/b99dbac6-012c-486d-b64c-206e314dd77e)
 # Interactive Dashboard
-[Power Bi Link](https://app.powerbi.com/view?r=eyJrIjoiZWI5YWVlZTQtNzY3YS00MGUwLWJlYjAtZGMyZmI2MjhjYjczIiwidCI6IjUwODkxNmEwLTdiODktNDNhMS1hZjRlLTcyZmUxNWFiYTViOSIsImMiOjEwfQ%3D%3D)
+[Power Bi Link](https://app.powerbi.com/view?r=eyJrIjoiNDY2ZWRjNTgtZjI2Ni00NmE0LTg1NTEtMjRmMjBjOWE3YzI3IiwidCI6IjUwODkxNmEwLTdiODktNDNhMS1hZjRlLTcyZmUxNWFiYTViOSIsImMiOjEwfQ%3D%3D)
