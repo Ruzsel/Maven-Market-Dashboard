@@ -2,27 +2,26 @@
 In this project, I have taken a series of critical steps in developing the Power BI dashboard
 # About this project
 Maven Market Sales Performance Analysis
-The project explores the sales performance analysis of "Maven Market". The primary objective of this project is to gain insights into the overall topline performance of "Maven Market", understand the performance of individual stores, customer characteristics.
+The project explores the sales performance analysis of "Maven Market". The primary objective of this project is to gain insights into the overall topline performance of "Maven Market".
 
-### Objectives:
-- Overall Sales Performance: Analyze the overall sales performance of "Maven Market" to understand its position in the market and identify areas for improvement.
+### Objective
 
-- Store-specific Performance: Evaluate the performance of each store within the Maven Market chain to identify top-performing locations and areas that require optimization.
+The objective of this analysis is to evaluate the effectiveness of your "Topline Performance" dashboard in Power BI. We will identify areas for improvement to ensure it provides actionable insights for data-driven decision making.
 
-- Customer Profiling: Utilize customer data to create detailed profiles, including demographics, purchasing behavior, and preferences, to better understand and target Maven Market's customer base.
+### User Story:
 
-### Key Insights:
-- Topline Performance Trends: Identify trends and patterns in overall sales data to understand Maven Market's performance over time.
+As the Head of Business Strategy at Maven Market, I need to understand our company's overall sales performance to formulate effective strategies and drive growth. Therefore, I request the assistance of our data analyst to analyze the "Topline Performance" dashboard.
 
-- Store Comparison: Compare sales metrics, such as revenue, profit, and product return, across different Maven Market locations also each store detail.
-
-- Customer Segmentation: Segment Maven Market's customer base based on various criteria, such as transaction, member type, and showing top 100 customers by transaction.
-
-### Methodology:
-The analysis will involve connecting and processing sales data from various Maven Market stores, creating data models to facilitate analysis, and utilizing advanced analytics techniques to derive actionable insights. The project will leverage tools such as Power BI for data visualization and statistical analysis.
-
+### Dashboard Components Review
+The current dashboard includes the following components:
+- Current Month Metrics: Transactions, Profit, and Return
+- Product Brand Matrix: Transactions, Profit, Profit Margin, and Return Rate by Brand
+- Monthly Revenue Trend
+- Revenue vs Target Gauge
+- Store Map Chart with Tooltips: Transactions, Profit, Cost, Return, Revenue, Return Rate, Quantity Sold, and Quantity Returned by Store
+- Area Heatmap with Tooltips: Same metrics as Store Map but group by Area(Country, State, City)
 ### Expected Outcomes:
-By the end of the project, we aim to provide Maven Market Dashboard to optimize sales performance, enhance customer satisfaction, and drive overall business growth.
+By the end of the project, i aim to provide Maven Market Dashboard to optimize sales performance, and drive overall business growth.
 
 ### Table of Contents
 - [Connecting and Shaping the data](#connecting--shaping-the-data)
@@ -201,11 +200,14 @@ DISTINCTCOUNT(
     'Customers'[customer_id]
 )
 ```
+```DAX
+Revenue Target = 
+VAR PreviousMonthRevenue = [Last Month Revenue]
+RETURN
+    PreviousMonthRevenue * 1.05
+```
 
 # Building the Report
-![Topline Dash](https://github.com/Ruzsel/Maven-Market-Dashboard/assets/150054552/d3da7446-8e2d-49cc-8140-77240cdb28de)
-![Store Dash](https://github.com/Ruzsel/Maven-Market-Dashboard/assets/150054552/7b3dd709-be17-4484-9a1c-88c35f3ca36c)
-![image](https://github.com/Ruzsel/Maven-Market-Dashboard/assets/150054552/c2abc671-521f-453a-9fad-faeeaaec0043)
-
+![Dashboard](https://github.com/Ruzsel/Maven-Market-Dashboard/assets/150054552/b99dbac6-012c-486d-b64c-206e314dd77e)
 # Interactive Dashboard
 [Power Bi Link](https://app.powerbi.com/view?r=eyJrIjoiMjU1MmIyOGMtMzE3Yy00MzE3LTg3YTgtYjcxMzFjMmQ0MWRkIiwidCI6IjUwODkxNmEwLTdiODktNDNhMS1hZjRlLTcyZmUxNWFiYTViOSIsImMiOjEwfQ%3D%3D)
