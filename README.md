@@ -1,53 +1,63 @@
 # Maven-Market-Dashboard
-In this project, I have taken a series of critical steps in developing the Power BI dashboard
-# About this project
-Maven Market Sales Performance Analysis
-The project explores the sales performance analysis of "Maven Market". The primary objective of this project is to gain insights into the overall topline performance of "Maven Market".
+Dalam proyek ini, saya menjalankan serangkaian langkah penting dalam membangun dashboard Power BI.
 
-## Objective
+# Tentang Proyek Ini
 
-The objective of this analysis is to evaluate the effectiveness of your "Topline Performance" dashboard in Power BI. We will identify areas for improvement to ensure it provides actionable insights for data-driven decision making.
+Analisis Performa Penjualan Maven Market
 
-## User Story:
+Proyek ini mengeksplorasi analisis performa penjualan "Maven Market". Tujuan utamanya adalah mendapatkan gambaran menyeluruh tentang kinerja bisnis "Maven Market" secara keseluruhan.
 
-As the Head of Business Strategy at Maven Market, I need to understand our company's overall sales performance to formulate effective strategies and drive growth. Therefore, I request the assistance of our data analyst to analyze the "Topline Performance" dashboard.
+## Tujuan
 
-## Dashboard Components Review
-The current dashboard includes the following components:
-- Current Month Metrics: Transactions, Profit, and Return
-- Product Brand Matrix: Transactions, Profit, Profit Margin, and Return Rate by Brand
-- Revenue Trend
-- Monthly Revenue vs Target Gauge
-- Store Map Chart with Tooltips: Transactions, Profit, Cost, Return, Revenue, Return Rate, Quantity Sold, and Quantity Returned by Store
-- Area Heatmap with Tooltips: Same metrics as Store Map but group by Area(Country, State, City)
-## Expected Outcomes:
-By the end of the project, i aim to provide Maven Market Dashboard to optimize sales performance, and drive overall business growth.
+Tujuan analisis ini adalah mengevaluasi efektivitas dashboard "Topline Performance" di Power BI. Dari sini, saya mengidentifikasi area yang perlu ditingkatkan agar dashboard mampu menghasilkan insight yang dapat dijadikan dasar pengambilan keputusan berbasis data.
 
-## Table of Contents
-- [Connecting and Shaping the data](#connecting--shaping-the-data)
-- [Creating Data Model](#creating-the-data-model)
-- [Adding DAX measures](#adding-dax-measures)
-- [Building Dashboard](#building-the-dashboard)
-- [Interactive Dashboard](#interactive-dashboard)
-- [Findings](#findings)
-- [Insight and Business Solutions](#insights-and-business-solutions)
+## User Story
 
-# Connecting & Shaping the Data
-Create and shaping :
-- [Customers Table](#customers-table)
-- [Products Table](#products-table)
-- [Stores Table](#stores-table)
-- [Regions Table](#regions-table)
-- [Calendar Table](#calendar-table)
-- [Return_data Table](#return_data-table)
-- [Transaction_data Table](#transaction_data-table)
+Sebagai Head of Business Strategy di Maven Market, saya perlu memahami performa penjualan perusahaan secara keseluruhan guna merumuskan strategi yang tepat dan mendorong pertumbuhan bisnis. Untuk itu, saya meminta data analis kami untuk menganalisis dashboard "Topline Performance".
 
-### Customers Table
-- Name the table "Customers", and make sure that headers have been promoted
-- Confirm that data types are accurate (Note: "customer_id" should be whole numbers, and both "customer_acct_num" and "customer_postal_code" should be text)
-- Add a new column named "full_name" to merge the the "first_name" and "last_name" columns, separated by a space
-- Create a new column named "birth_year" to extract the year from the "birthdate" column, and format as text
-- Create a conditional column named "has_children" which equals "N" if "total_children" = 0, otherwise "Y"
+## Komponen Dashboard
+
+Dashboard yang ada saat ini mencakup komponen-komponen berikut:
+- **Metrik Bulan Berjalan:** Transaksi, Profit, dan Return
+- **Matriks Brand Produk:** Transaksi, Profit, Profit Margin, dan Return Rate per Brand
+- **Tren Pendapatan**
+- **Gauge Revenue Bulanan vs Target**
+- **Peta Toko dengan Tooltip:** Transaksi, Profit, Biaya, Return, Revenue, Return Rate, Kuantitas Terjual, dan Kuantitas Dikembalikan per Toko
+- **Area Heatmap dengan Tooltip:** Metrik yang sama dengan Peta Toko, dikelompokkan berdasarkan Area (Negara, Negara Bagian, Kota)
+
+## Target Akhir
+
+Di akhir proyek ini, saya bertujuan menghadirkan Maven Market Dashboard yang dapat mengoptimalkan performa penjualan dan mendorong pertumbuhan bisnis secara menyeluruh.
+
+## Daftar Isi
+- [Menghubungkan & Membentuk Data](#menghubungkan--membentuk-data)
+- [Membuat Data Model](#membuat-data-model)
+- [Menambahkan DAX Measures](#menambahkan-dax-measures)
+- [Membangun Dashboard](#membangun-dashboard)
+- [Dashboard Interaktif](#dashboard-interaktif)
+- [Temuan](#temuan)
+- [Insight & Solusi Bisnis](#insight-dan-solusi-bisnis)
+
+---
+
+# Menghubungkan & Membentuk Data
+
+Saya membuat dan membentuk tabel-tabel berikut:
+- [Tabel Customers](#tabel-customers)
+- [Tabel Products](#tabel-products)
+- [Tabel Stores](#tabel-stores)
+- [Tabel Regions](#tabel-regions)
+- [Tabel Calendar](#tabel-calendar)
+- [Tabel Return_data](#tabel-return_data)
+- [Tabel Transaction_data](#tabel-transaction_data)
+
+### Tabel Customers
+- Menamai tabel dengan "Customers" dan memastikan header sudah dipromosikan
+- Memeriksa tipe data (catatan: "customer_id" harus bertipe whole number, sedangkan "customer_acct_num" dan "customer_postal_code" harus bertipe teks)
+- Menambahkan kolom baru bernama "full_name" dengan menggabungkan kolom "first_name" dan "last_name", dipisahkan spasi
+- Membuat kolom baru bernama "birth_year" untuk mengambil tahun dari kolom "birthdate", dan memformatnya sebagai teks
+- Membuat kolom kondisional bernama "has_children" yang bernilai "N" jika "total_children" = 0, selain itu bernilai "Y"
+
 ![Load MavenMarket_Customers](https://github.com/Ruzsel/Maven-Market-Dashboard/assets/150054552/f8798f97-4fd3-4f7d-8290-c0ba2a1d09ab)
 ![Customer_id, acct name, postal data type change](https://github.com/Ruzsel/Maven-Market-Dashboard/assets/150054552/a2a4ca35-7b11-4e5a-b18a-c74ef91bf327)
 ![Create full_name Column](https://github.com/Ruzsel/Maven-Market-Dashboard/assets/150054552/d05885ee-7d5d-41fd-9a70-67a57b05da15)
@@ -57,11 +67,12 @@ Create and shaping :
 ![has_children](https://github.com/Ruzsel/Maven-Market-Dashboard/assets/150054552/92ae5105-851f-4096-8e0b-fff297ab8ade)
 ![has_children finish](https://github.com/Ruzsel/Maven-Market-Dashboard/assets/150054552/f31a604b-b3b0-47a8-ac68-6d376a7e2a29)
 
-### Products Table
-- Name the table "Products" and make sure that headers have been promoted
-- Confirm that data types are accurate (Note: "product_id" should be whole numbers, "product_sku" should be text), "product_retail_price" and "product_cost" should be decimal numbers)
-- Add a calculated column named "discount_price", equal to 90% of the original retail price Format as a fixed decimal number, and then use the rounding tool to round to 2 digits
-- Replace "null" values with zeros in both the "recyclable" and "low-fat" columns
+### Tabel Products
+- Menamai tabel dengan "Products" dan memastikan header sudah dipromosikan
+- Memeriksa tipe data (catatan: "product_id" harus whole number, "product_sku" harus teks, "product_retail_price" dan "product_cost" harus decimal number)
+- Menambahkan kolom kalkulasi bernama "discount_price" senilai 90% dari harga retail asli, memformatnya sebagai fixed decimal number, lalu membulatkan ke 2 desimal
+- Mengganti nilai "null" dengan angka nol pada kolom "recyclable" dan "low-fat"
+
 ![Extract MavenProducts csv](https://github.com/Ruzsel/Maven-Market-Dashboard/assets/150054552/3a7d2692-9ac8-4c31-b23c-c27c1465cc61)
 ![Create discount_price Column](https://github.com/Ruzsel/Maven-Market-Dashboard/assets/150054552/8018ab62-886c-4c4f-99a5-cdb613a277f3)
 ![discount_price](https://github.com/Ruzsel/Maven-Market-Dashboard/assets/150054552/a2c51394-9439-4919-a97a-58a16069b980)
@@ -69,11 +80,12 @@ Create and shaping :
 ![low_fat](https://github.com/Ruzsel/Maven-Market-Dashboard/assets/150054552/d2b59dad-9e5e-41c6-95a8-81187be52f35)
 ![recyclable and low_fat](https://github.com/Ruzsel/Maven-Market-Dashboard/assets/150054552/cf2a83c2-0dbe-4217-a6e9-63d46dfb2633)
 
-### Stores Table
-- Name the table "Stores" and make sure that headers have been promoted
-- Confirm that data types are accurate (Note: "store_id" and "region_id" should be whole numbers)
-- Add a calculated column named "full_address", by merging "store_city", "store_state", and "store_country", separated by a comma and space (hint: use a custom separator)
-- Add a calculated column named "area_code", by extracting the characters before the dash ("-") in the "store_phone" field
+### Tabel Stores
+- Menamai tabel dengan "Stores" dan memastikan header sudah dipromosikan
+- Memeriksa tipe data (catatan: "store_id" dan "region_id" harus whole number)
+- Menambahkan kolom kalkulasi bernama "full_address" dengan menggabungkan "store_city", "store_state", dan "store_country", dipisahkan koma dan spasi
+- Menambahkan kolom kalkulasi bernama "area_code" dengan mengambil karakter sebelum tanda pisah ("-") pada kolom "store_phone"
+
 ![Exctract MavenMarketStore](https://github.com/Ruzsel/Maven-Market-Dashboard/assets/150054552/d58f53a5-c99d-4f80-8e57-006185623d1a)
 ![store_id region id whole number](https://github.com/Ruzsel/Maven-Market-Dashboard/assets/150054552/00471fbf-3a00-4375-8c5d-f2d06106c652)
 ![add full_address column](https://github.com/Ruzsel/Maven-Market-Dashboard/assets/150054552/e7b5907c-906f-4a9d-8771-3b5883bb9909)
@@ -81,69 +93,78 @@ Create and shaping :
 ![Create area_code](https://github.com/Ruzsel/Maven-Market-Dashboard/assets/150054552/acc3ad54-de94-47bc-b833-36f5addd03cf)
 ![area_code](https://github.com/Ruzsel/Maven-Market-Dashboard/assets/150054552/598a21f8-203a-49ce-a28f-0676d26f2f24)
 
-### Regions Table
-- Name the table "Regions" and make sure that headers have been promoted
-- Confirm that data types are accurate (Note: "region_id" should be whole numbers)
-![Extract MavenRegions](https://github.com/Ruzsel/Maven-Market-Dashboard/assets/150054552/881878ee-cc8a-46ca-b5e3-daf3c0ed520b)
-![Regions ](https://github.com/Ruzsel/Maven-Market-Dashboard/assets/150054552/261c8b8e-a105-46f3-b3bf-5e04cfaec12c)
+### Tabel Regions
+- Menamai tabel dengan "Regions" dan memastikan header sudah dipromosikan
+- Memeriksa tipe data (catatan: "region_id" harus whole number)
 
-### Calendar Table
-- Name the table "Calendar" and make sure that headers have been promoted
-- Use the date tools in the query editor to add the following columns:
-Start of Week (starting Sunday), Name of Day, Start of Month, Name of Month, Quarter of Year, Year
+![Extract MavenRegions](https://github.com/Ruzsel/Maven-Market-Dashboard/assets/150054552/881878ee-cc8a-46ca-b5e3-daf3c0ed520b)
+![Regions](https://github.com/Ruzsel/Maven-Market-Dashboard/assets/150054552/261c8b8e-a105-46f3-b3bf-5e04cfaec12c)
+
+### Tabel Calendar
+- Menamai tabel dengan "Calendar" dan memastikan header sudah dipromosikan
+- Menggunakan fitur date tools di query editor untuk menambahkan kolom-kolom berikut: Start of Week (mulai Minggu), Name of Day, Start of Month, Name of Month, Quarter of Year, Year
+
 ![MavenCalender](https://github.com/Ruzsel/Maven-Market-Dashboard/assets/150054552/d0d1b667-30e2-472b-a35f-450b25660406)
 ![Calender add column complete](https://github.com/Ruzsel/Maven-Market-Dashboard/assets/150054552/a06f5a9e-7dc6-4bf5-8f2f-9909ef4d0cb1)
 
-### Return_data Table
-- Name the table "Return_Data" and make sure that headers have been promoted
-- Confirm that data types are accurate (all ID columns and quantity should be whole numbers)
+### Tabel Return_data
+- Menamai tabel dengan "Return_Data" dan memastikan header sudah dipromosikan
+- Memeriksa tipe data (semua kolom ID dan quantity harus whole number)
+
 ![Extract MavenReturns](https://github.com/Ruzsel/Maven-Market-Dashboard/assets/150054552/7e5d0870-fcb8-4cf9-bcb7-9969a2a39689)
 ![return_data](https://github.com/Ruzsel/Maven-Market-Dashboard/assets/150054552/1a9f5d85-67a3-4aa0-ad84-2093c14a300a)
 
-### Transaction_data Table
-- Add a new folder named "MavenMarket Transactions", containing both the "MavenMarket_Transactions_1997" and "MavenMarket_Transactions_1998" csv files
-- Connect to the folder path
-- combine the files, then remove the "Source.Name" column
-- Name the table "Transaction_data", and confirm that headers have been promoted
-- Confirm that data types are accurate (all ID columns and quantity should be whole numbers)
+### Tabel Transaction_data
+- Membuat folder baru bernama "MavenMarket Transactions" yang berisi kedua file CSV "MavenMarket_Transactions_1997" dan "MavenMarket_Transactions_1998"
+- Menghubungkan ke path folder tersebut
+- Menggabungkan file-filenya, lalu menghapus kolom "Source.Name"
+- Menamai tabel dengan "Transaction_data" dan memastikan header sudah dipromosikan
+- Memeriksa tipe data (semua kolom ID dan quantity harus whole number)
+
 ![Create Mavenmarket_transaction](https://github.com/Ruzsel/Maven-Market-Dashboard/assets/150054552/be2b22a3-d782-4224-bb37-8e67ab64f68a)
 ![Exctract MavenTransactions](https://github.com/Ruzsel/Maven-Market-Dashboard/assets/150054552/7894896a-ed2d-42be-8907-7a4a194dc081)
 ![Combine maventransactions file](https://github.com/Ruzsel/Maven-Market-Dashboard/assets/150054552/0d35632b-baf3-423e-870b-ce5c3ea23b47)
 ![pra delete source name](https://github.com/Ruzsel/Maven-Market-Dashboard/assets/150054552/f51ea6d0-0dc7-4306-8571-ba721b4534fd)
 ![post source name](https://github.com/Ruzsel/Maven-Market-Dashboard/assets/150054552/fa291896-6aba-4646-9a0c-34ec33268c10)
 
-With the exception of the two data tables("return_data", "transaction_data", disabling "Include in Report Refresh"
-Connecting & Shaping the Data Finish
+Untuk dua tabel data ("return_data" dan "transaction_data"), saya menonaktifkan opsi "Include in Report Refresh".
 
-# Creating the Data Model
-1. In the MODEL view, arrange tables with the lookup tables above the data tables
+Proses Menghubungkan & Membentuk Data selesai.
 
-- Connect Transaction_Data to Customers, Products, and Stores using valid primary/foreign keys 
-- Connect Transaction_Data to Calendar using both date fields, with an inactive "stock_date" relationship
-- Connect Return_Data to Products, Calendar, and Stores using valid primary/foreign keys
-- Connect Stores to Regions as a "snowflake" schema
+---
 
-2. Confirm the following:
+# Membuat Data Model
 
-- All relationships follow one-to-many cardinality, with primary keys (1) on the lookup side and foreign keys (*) on the data side
-- Filters are all one-way (no two-way filters)
-- Filter context flows "downstream" from lookup tables to data tables
-- Data tables are connected via shared lookup tables (not directly to each other)
+**1. Di tampilan MODEL, saya menyusun tabel dengan lookup table di atas data table**
 
-3. Hide all foreign keys in both data tables from Report View, as well as "region_id" from the Stores table
+- Menghubungkan Transaction_Data ke Customers, Products, dan Stores menggunakan primary/foreign key yang sesuai
+- Menghubungkan Transaction_Data ke Calendar menggunakan kedua field tanggal, dengan relasi "stock_date" yang dinonaktifkan (inactive)
+- Menghubungkan Return_Data ke Products, Calendar, dan Stores menggunakan primary/foreign key yang sesuai
+- Menghubungkan Stores ke Regions dalam skema "snowflake"
 
-4. In the DATA view:
+**2. Saya memastikan hal-hal berikut terpenuhi:**
 
-- Update all date fields (across all tables) to the "M/d/yyyy" format using the formatting tools in the Modeling tab
-- Update "product_retail_price", "product_cost", and "discount_price" to Currency ($ English) format
-- In the Customers table, categorize "customer_city" as City, "customer_postal_code" as Postal Code, and "customer_country" as Country/Region
-- In the Stores table, categorize "store_city" as City, "store_state" as State or Province, "store_country" as Country/Region, and "full_address" as Address
+- Semua relasi mengikuti kardinalitas one-to-many, dengan primary key (1) di sisi lookup table dan foreign key (*) di sisi data table
+- Semua filter bersifat satu arah (tidak ada two-way filter)
+- Filter context mengalir ke "downstream" dari lookup table ke data table
+- Data table terhubung melalui shared lookup table (bukan langsung satu sama lain)
+
+**3.** Menyembunyikan semua foreign key pada kedua data table dari Report View, serta "region_id" dari tabel Stores
+
+**4. Di tampilan DATA, saya melakukan hal-hal berikut:**
+
+- Memperbarui semua field tanggal (di semua tabel) ke format "M/d/yyyy" menggunakan fitur formatting di tab Modeling
+- Memperbarui "product_retail_price", "product_cost", dan "discount_price" ke format Currency ($ English)
+- Di tabel Customers, mengkategorikan "customer_city" sebagai City, "customer_postal_code" sebagai Postal Code, dan "customer_country" sebagai Country/Region
+- Di tabel Stores, mengkategorikan "store_city" sebagai City, "store_state" sebagai State or Province, "store_country" sebagai Country/Region, dan "full_address" sebagai Address
 
 ![Creating Data Model Fix](https://github.com/Ruzsel/Maven-Market-Dashboard/assets/150054552/5de3b2f1-d47f-435f-b91e-4b967393e3ac)
 
-# Adding DAX Measures
-Please Feel Free to check all DAX that i had been create in this power bi file but, in developing the dashboard I will only display the DAX measures used in my dashboard report because if I were to display all the DAX measures, this section would become very long. Here are some of the DAX measures I used in my dashboard:
+---
 
+# Menambahkan DAX Measures
+
+Silakan cek seluruh DAX yang telah saya buat di file Power BI ini. Pada bagian ini saya hanya menampilkan DAX measures yang digunakan di laporan dashboard, karena jika semuanya dimuat bagian ini akan sangat panjang. Berikut beberapa DAX measures yang saya gunakan:
 ```DAX
 Last Month Transactions = CALCULATE([Total Transactions], PREVIOUSMONTH('Calendar'[date]))
 ```
@@ -209,142 +230,133 @@ RETURN
     PreviousMonthRevenue * 1.05
 ```
 
-## Building the Dashboard
+---
+
+## Membangun Dashboard
 ![image](https://github.com/Ruzsel/Maven-Market-Dashboard/assets/150054552/dcbe7605-e799-4096-aabc-c12e5a9f9948)
 
-## Interactive Dashboard
-[Power Bi Link](https://app.powerbi.com/view?r=eyJrIjoiNDY2ZWRjNTgtZjI2Ni00NmE0LTg1NTEtMjRmMjBjOWE3YzI3IiwidCI6IjUwODkxNmEwLTdiODktNDNhMS1hZjRlLTcyZmUxNWFiYTViOSIsImMiOjEwfQ%3D%3D)
+## Dashboard Interaktif
+[Link Power BI](https://app.powerbi.com/view?r=eyJrIjoiNDY2ZWRjNTgtZjI2Ni00NmE0LTg1NTEtMjRmMjBjOWE3YzI3IiwidCI6IjUwODkxNmEwLTdiODktNDNhMS1hZjRlLTcyZmUxNWFiYTViOSIsImMiOjEwfQ%3D%3D)
 
-# Findings
+---
 
+# Temuan
 
-## 1.What are the top 10 products in each country based on profit?
+## 1. Apa saja 10 produk teratas di setiap negara berdasarkan profit?
 
+**USA:**
 
-USA :
+| Brand Produk | Total Transaksi | Total Profit | Profit Margin | Return Rate |
+|---|---|---|---|---|
+| Hermanos | 2.796 | $11.233 | 58,71% | 0,95% |
+| Ebony | 2.657 | $10.224 | 59,84% | 0,78% |
+| Tell Tale | 2.642 | $10.168 | 58,01% | 0,96% |
+| Tri-State | 2.597 | $10.130 | 58,64% | 1,07% |
+| High Top | 2.537 | $10.006 | 60,46% | 0,80% |
+| Nationeel | 2.319 | $9.642 | 60,43% | 1,15% |
+| Best Choice | 2.206 | $9.510 | 60,88% | 0,79% |
+| Horatio | 2.124 | $8.911 | 58,35% | 1,44% |
+| High Quality | 1.893 | $8.416 | 59,98% | 1,20% |
+| Red Wing | 2.027 | $8.377 | 59,32% | 1,02% |
 
-| Product Brand | Total Transactions | Total Profit | Profit Margin | Return Rate |
-|---------------|--------------------|--------------|---------------|-------------|
-| Hermanos      | 2,796              | $11,233      | 58.71%        | 0.95%       |
-| Ebony         | 2,657              | $10,224      | 59.84%        | 0.78%       |
-| Tell Tale     | 2,642              | $10,168      | 58.01%        | 0.96%       |
-| Tri-State     | 2,597              | $10,130      | 58.64%        | 1.07%       |
-| High Top      | 2,537              | $10,006      | 60.46%        | 0.80%       |
-| Nationeel     | 2,319              | $9,642       | 60.43%        | 1.15%       |
-| Best Choice   | 2,206              | $9,510       | 60.88%        | 0.79%       |
-| Horatio       | 2,124              | $8,911       | 58.35%        | 1.44%       |
-| High Quality  | 1,893              | $8,416       | 59.98%        | 1.20%       |
-| Red Wing      | 2,027              | $8,377       | 59.32%        | 1.02%       |
+**Meksiko:**
 
+| Brand Produk | Total Transaksi | Total Profit | Profit Margin | Return Rate |
+|---|---|---|---|---|
+| Hermanos | 2.096 | $8.622 | 58,53% | 0,98% |
+| Ebony | 2.079 | $8.177 | 59,78% | 1,09% |
+| Tri-State | 2.049 | $8.089 | 59,23% | 1,17% |
+| Tell Tale | 2.036 | $8.088 | 58,11% | 1,01% |
+| High Top | 1.954 | $7.993 | 60,31% | 1,20% |
+| Nationeel | 1.710 | $7.301 | 60,42% | 1,19% |
+| Best Choice | 1.657 | $7.244 | 60,35% | 0,75% |
+| Horatio | 1.699 | $7.224 | 58,46% | 1,13% |
+| Fast | 1.650 | $6.754 | 60,86% | 1,20% |
+| Denny | 1.503 | $6.709 | 58,04% | 0,93% |
 
-MEXICO :
+**Kanada:**
 
-| Product Brand | Total Transactions | Total Profit | Profit Margin | Return Rate |
-|---------------|--------------------|--------------|---------------|-------------|
-| Hermanos      | 2,096              | $8,622       | 58.53%        | 0.98%       |
-| Ebony         | 2,079              | $8,177       | 59.78%        | 1.09%       |
-| Tri-State     | 2,049              | $8,089       | 59.23%        | 1.17%       |
-| Tell Tale     | 2,036              | $8,088       | 58.11%        | 1.01%       |
-| High Top      | 1,954              | $7,993       | 60.31%        | 1.20%       |
-| Nationeel     | 1,710              | $7,301       | 60.42%        | 1.19%       |
-| Best Choice   | 1,657              | $7,244       | 60.35%        | 0.75%       |
-| Horatio       | 1,699              | $7,224       | 58.46%        | 1.13%       |
-| Fast          | 1,650              | $6,754       | 60.86%        | 1.20%       |
-| Denny         | 1,503              | $6,709       | 58.04%        | 0.93%       |
+| Brand Produk | Total Transaksi | Total Profit | Profit Margin | Return Rate |
+|---|---|---|---|---|
+| Ebony | 502 | $1.953 | 59,80% | 1,32% |
+| Hermanos | 450 | $1.898 | 58,75% | 0,79% |
+| High Top | 449 | $1.811 | 60,76% | 1,34% |
+| Tri-State | 453 | $1.760 | 58,99% | 0,98% |
+| Tell Tale | 434 | $1.727 | 57,98% | 1,09% |
+| Nationeel | 379 | $1.674 | 60,58% | 1,34% |
+| Horatio | 372 | $1.601 | 58,56% | 0,85% |
+| Best Choice | 355 | $1.601 | 60,53% | 1,15% |
+| Big Time | 356 | $1.523 | 60,40% | 1,67% |
+| High Quality | 320 | $1.485 | 60,47% | 1,34% |
 
+---
 
-CANADA :
+## 2. Bagaimana gambaran total transaksi, total profit, profit margin, dan return rate di setiap negara?
 
-| Product Brand | Total Transactions | Total Profit | Profit Margin | Return Rate |
-|---------------|--------------------|--------------|---------------|-------------|
-| Ebony         | 502                | $1,953       | 59.80%        | 1.32%       |
-| Hermanos      | 450                | $1,898       | 58.75%        | 0.79%       |
-| High Top      | 449                | $1,811       | 60.76%        | 1.34%       |
-| Tri-State     | 453                | $1,760       | 58.99%        | 0.98%       |
-| Tell Tale     | 434                | $1,727       | 57.98%        | 1.09%       |
-| Nationeel     | 379                | $1,674       | 60.58%        | 1.34%       |
-| Horatio       | 372                | $1,601       | 58.56%        | 0.85%       |
-| Best Choice   | 355                | $1,601       | 60.53%        | 1.15%       |
-| Big Time      | 356                | $1,523       | 60.40%        | 1.67%       |
-| High Quality  | 320                | $1,485       | 60.47%        | 1.34%       |
+| Negara | Total Transaksi | Total Profit | Profit Margin | Return Rate |
+|---|---|---|---|---|
+| USA | 93.986 | $365.665 | 59,68% | 0,97% |
+| Meksiko | 72.806 | $285.687 | 59,65% | 1,02% |
+| Kanada | 16.091 | $64.341 | 59,76% | 1,07% |
 
+---
 
-## 2.How are overall total transactions, total profit, profit margin, and return rate in each country?
+## 3. Bagaimana perbandingan transaksi, profit, dan return antara bulan ini dengan bulan sebelumnya di setiap negara?
 
+| Negara | Transaksi Bulan Ini | Target | % Selisih | Profit Bulan Ini | Target | % Selisih | Return Bulan Ini | Target | % Selisih |
+|---|---|---|---|---|---|---|---|---|---|
+| USA | 9.516 | 10.094 | -5,73% | $36.909 | $39.438 | -6,41% | 256 | 268 | +4,48% |
+| Meksiko | 7.350 | 5.727 | +28,34% | $28.976 | $22.306 | +29,9% | 198 | 155 | -27,74% |
+| Kanada | 1.459 | 1.518 | -3,89% | $5.798 | $6.128 | -5,39% | 42 | 59 | +28,81% |
 
-USA : 
+---
 
-| Country         | Total Transactions | Total Profit | Profit Margin | Return Rate |
-|-----------------|--------------------|--------------|---------------|-------------|
-| USA             | 93,986             | $365,665     | 59.68%        | 0.97%       |
+## 4. Toko mana yang memiliki performa terbaik di setiap negara?
 
-MEXICO :
+**USA:**
 
-| Country | Total Transactions | Total Profit | Profit Margin | Return Rate |
-|---------|--------------------|--------------|---------------|-------------|
-| Mexico  | 72,806             | $285,687     | 59.65%        | 1.02%       |
+| Kota Toko | Total Transaksi | Total Revenue | Total Biaya | Total Profit | Total Return | Return Rate | Qty Terjual | Qty Dikembalikan |
+|---|---|---|---|---|---|---|---|---|
+| Salem | 12.518 | $83.181 | $33.492 | $49.689 | 321 | 0,94% | 39.182 | 367 |
 
-CANADA : 
+**Meksiko:**
 
-| Country | Total Transactions | Total Profit | Profit Margin | Return Rate |
-|---------|--------------------|--------------|---------------|-------------|
-| Canada  | 16,091             | $64,341      | 59.76%        | 1.07%       |
+| Kota Toko | Total Transaksi | Total Revenue | Total Biaya | Total Profit | Total Return | Return Rate | Qty Terjual | Qty Dikembalikan |
+|---|---|---|---|---|---|---|---|---|
+| Hidalgo | 110.798 | $44.692 | $44.692 | $66.106 | 491 | 1,08% | 52.888 | 572 |
 
+**Kanada:**
 
-## 3.How do the transactions, profit, and return compare between this month and the previous month in each country?
+| Kota Toko | Total Transaksi | Total Revenue | Total Biaya | Total Profit | Total Return | Return Rate | Qty Terjual | Qty Dikembalikan |
+|---|---|---|---|---|---|---|---|---|
+| Vancouver | 12.770 | $85.262 | $34.307 | $50.955 | 359 | 1,05% | 40.152 | 420 |
 
+---
 
-| Country | Current Month Transactions | Target Transactions | % Difference | Current Month Profit | Target Profit | % Difference | Current Month Return | Target Return | % Difference |
-|---------|---------------------------|---------------------|--------------|----------------------|---------------|--------------|----------------------|---------------|--------------|
-| USA     | 9,516                     | 10,094              | -5.73%       | $36,909              | $39,438       | -6.41%       | 256                  | 268           | +4.48%       |
-| MEXICO  | 7,350                     | 5,727               | +28.34%      | $28,976              | $22,306       | +29.9%       | 198                  | 155           | -27.74%      |
-| CANADA  | 1,459                     | 1,518               | -3.89%       | $5,798               | $6,128        | -5.39%       | 42                   | 59            | +28.81%      |
+# Insight dan Solusi Bisnis
 
+### USA
+- **10 Produk Teratas Berdasarkan Profit:** Brand seperti Hermanos, Ebony, dan Tell Tale menunjukkan kinerja yang solid dalam menghasilkan profit tinggi dengan margin yang sehat dan return rate yang rendah. Strategi pemasaran dan penjualan perlu diperkuat untuk mempertahankan sekaligus meningkatkan penjualan produk-produk ini.
 
-## 4.Which store has the best overall performance in each country?
+- **Perbandingan Kinerja Bulan Ini vs Bulan Lalu:** Meski volume transaksi dan profit bulan ini turun sekitar 6% dibanding bulan sebelumnya, return rate masih terjaga stabil. Ada peluang untuk memperkuat strategi pemasaran atau memberikan insentif kepada pelanggan agar transaksi dan profit kembali meningkat.
 
+- **Toko Berperforma Terbaik:** Toko di Salem menunjukkan performa yang luar biasa dengan total transaksi tinggi, profit signifikan, dan return rate yang rendah. Menganalisis lebih mendalam strategi penjualan, lokasi toko, dan manajemen inventaris dapat memberikan pelajaran berharga untuk meningkatkan performa toko-toko lainnya.
 
-USA : 
+### Meksiko
+- **10 Produk Teratas Berdasarkan Profit:** Pola profit di Meksiko serupa dengan di AS, dengan brand Hermanos dan Ebony mendominasi. Perusahaan perlu terus memfokuskan diri pada produk-produk ini dan memperluas strategi pemasaran untuk memperbesar pangsa pasar.
 
-| Store City | Total Transactions | Total Revenue | Total Cost | Total Profit | Total Returns | Return Rate | Quantity Sold | Quantity Returned |
-|------------|--------------------|---------------|------------|--------------|---------------|-------------|---------------|-------------------|
-| Salem      | 12,518             | $83,181       | $33,492    | $49,689      | 321           | 0.94%       | 39,182        | 367               |
+- **Perbandingan Kinerja Bulan Ini vs Bulan Lalu:** Ada kenaikan signifikan pada volume transaksi dan profit bulan ini dibanding bulan sebelumnya, meski return rate mengalami penurunan. Kondisi ini mencerminkan potensi pertumbuhan yang cukup besar di pasar Meksiko.
 
-MEXICO : 
+- **Toko Berperforma Terbaik:** Toko di Hidalgo mencatat kinerja yang menonjol dengan volume transaksi tinggi dan profit yang signifikan. Menganalisis faktor-faktor yang mendorong performa toko ini dapat dimanfaatkan untuk mendongkrak kinerja toko-toko lain.
 
-| Store City | Total Transactions | Total Revenue | Total Cost | Total Profit | Total Returns | Return Rate | Quantity Sold | Quantity Returned |
-|------------|--------------------|---------------|------------|--------------|---------------|-------------|---------------|-------------------|
-| Hidalgo    | 110,798            | $44,692       | $44,692    | $66,106      | 491           | 1.08%       | 52,888        | 572               |
+### Kanada
+- **10 Produk Teratas Berdasarkan Profit:** Meski total transaksi Kanada lebih rendah dibanding AS dan Meksiko, pola profitnya tetap serupa, dengan brand Ebony dan Hermanos di posisi teratas. Perusahaan perlu terus memaksimalkan kedua brand ini untuk meningkatkan profitabilitas.
 
-CANADA : 
+- **Perbandingan Kinerja Bulan Ini vs Bulan Lalu:** Volume transaksi dan profit bulan ini sedikit turun dibanding bulan sebelumnya. Namun, return rate justru menurun secara signifikan, yang mengindikasikan peningkatan kepuasan pelanggan atau pengelolaan retur yang semakin efisien.
 
-| Store City | Total Transactions | Total Revenue | Total Cost | Total Profit | Total Returns | Return Rate | Quantity Sold | Quantity Returned |
-|------------|--------------------|---------------|------------|--------------|---------------|-------------|---------------|-------------------|
-| Vancouver  | 12,770             | $85,262       | $34,307    | $50,955      | 359           | 1.05%       | 40,152        | 420               |
+- **Toko Berperforma Terbaik:** Toko di Vancouver menunjukkan kinerja yang baik dengan volume transaksi tinggi dan profit yang cukup signifikan. Faktor-faktor keberhasilan toko ini bisa dijadikan acuan untuk meningkatkan performa toko-toko lain di Kanada.
 
-# Insights and Business solutions
-### Insights and Business Solutions for the United States (USA):
-- Top 10 Products by Profit: Brands like Hermanos, Ebony, and Tell Tale have performed well in generating high profits with healthy margins and low return rates. Marketing and sales strategies can be reinforced to maintain and increase sales of these products.
-
-- Comparison of This Month's Performance with the Previous Month: Despite a roughly 6% decrease in both transaction volume and profit this month compared to the previous month, the return rate remains stable. There may be opportunities to enhance marketing strategies or provide incentives to customers to boost transaction volume and profit.
-
-- Top-Performing Store: The store in Salem has shown outstanding performance with high total transactions, significant profit, and low return rates. Further analysis of sales strategies, store locations, and inventory management can provide additional insights to improve the performance of other stores.
-
-### Insights and Business Solutions for Mexico:
-- Top 10 Products by Profit: Profit patterns mirror those seen in the US, with brands like Hermanos and Ebony dominating. Companies can continue to focus on these products and expand marketing strategies to increase market share.
-
-- Comparison of This Month's Performance with the Previous Month: There's been a significant increase in transaction volume and profit this month compared to the previous month, although the return rate has decreased. This indicates significant growth potential in the market.
-
-- Top-Performing Store: The store in Hidalgo demonstrates outstanding performance with high transaction volume and significant profit. Further analysis of factors contributing to good store performance can be used to enhance the performance of other stores.
-
-### Insights and Business Solutions for Canada:
-- Top 10 Products by Profit: Although Canada has lower total transactions compared to the US and Mexico, profit patterns are similar, with brands like Ebony and Hermanos dominating. Companies can continue to focus on these brands to increase profitability.
-
-- Comparison of This Month's Performance with the Previous Month: There's been a slight decrease in transaction volume and profit this month compared to the previous month. However, the return rate has significantly decreased, indicating an improvement in customer satisfaction or efficiency in return management.
-
-- Top-Performing Store: The store in Vancouver exhibits good performance with high transaction volume and significant profit. Further analysis of factors contributing to good store performance can be used to enhance the performance of other stores in Canada.
-
-### General Business Solutions:
-- Increased Marketing and Promotion: Based on the data showing a decrease in transactions in the United States and Canada, there are opportunities to increase marketing and promotion efforts to attract more customers and boost sales.
-- Inventory Management Optimization: Further analysis of sales patterns and demand can help optimize inventory management to reduce costs and increase profitability.
-- Enhanced Customer Experience: Focusing on improving the customer experience can help retain existing customers and attract new ones. This may include better customer service, more flexible return policies, and overall optimization of the purchasing process.
+### Solusi Bisnis Umum
+- **Meningkatkan Pemasaran dan Promosi:** Mengingat adanya penurunan transaksi di AS dan Kanada, ada peluang untuk mengintensifkan upaya pemasaran dan promosi guna menarik lebih banyak pelanggan dan mendorong penjualan.
+- **Mengoptimalkan Manajemen Inventaris:** Menganalisis lebih lanjut pola penjualan dan permintaan dapat membantu mengoptimalkan manajemen inventaris, sehingga biaya dapat ditekan dan profitabilitas meningkat.
+- **Meningkatkan Pengalaman Pelanggan:** Memfokuskan diri pada peningkatan pengalaman pelanggan dapat membantu mempertahankan pelanggan yang ada sekaligus menarik pelanggan baru. Langkah-langkah yang bisa dilakukan antara lain meningkatkan layanan pelanggan, membuat kebijakan retur yang lebih fleksibel, dan mengoptimalkan proses pembelian secara keseluruhan.
