@@ -333,30 +333,36 @@ RETURN
 
 ---
 
-# Insight dan Solusi Bisnis
+## Insight & Business Recommendations
 
-### USA
-- **10 Produk Teratas Berdasarkan Profit:** Brand seperti Hermanos, Ebony, dan Tell Tale menunjukkan kinerja yang solid dalam menghasilkan profit tinggi dengan margin yang sehat dan return rate yang rendah. Strategi pemasaran dan penjualan perlu diperkuat untuk mempertahankan sekaligus meningkatkan penjualan produk-produk ini.
+**1. Profit margin konsisten di seluruh pasar mengindikasikan pricing power yang kuat**
 
-- **Perbandingan Kinerja Bulan Ini vs Bulan Lalu:** Meski volume transaksi dan profit bulan ini turun sekitar 6% dibanding bulan sebelumnya, return rate masih terjaga stabil. Ada peluang untuk memperkuat strategi pemasaran atau memberikan insentif kepada pelanggan agar transaksi dan profit kembali meningkat.
+USA (59,68%), Meksiko (59,65%), dan Kanada (59,76%) mencatatkan profit margin yang hampir identik meskipun skala transaksinya sangat berbeda. Ini menunjukkan struktur harga dan efisiensi biaya yang berjalan konsisten di seluruh wilayah operasional. Ruang untuk optimasi margin masih terbuka, khususnya pada produk dengan return rate rendah dan volume tinggi seperti Ebony dan Best Choice.
 
-- **Toko Berperforma Terbaik:** Toko di Salem menunjukkan performa yang luar biasa dengan total transaksi tinggi, profit signifikan, dan return rate yang rendah. Menganalisis lebih mendalam strategi penjualan, lokasi toko, dan manajemen inventaris dapat memberikan pelajaran berharga untuk meningkatkan performa toko-toko lainnya.
+**2. Hermanos dan Ebony adalah hero products lintas pasar**
 
-### Meksiko
-- **10 Produk Teratas Berdasarkan Profit:** Pola profit di Meksiko serupa dengan di AS, dengan brand Hermanos dan Ebony mendominasi. Perusahaan perlu terus memfokuskan diri pada produk-produk ini dan memperluas strategi pemasaran untuk memperbesar pangsa pasar.
+Kedua brand ini secara konsisten menempati dua posisi teratas berdasarkan total profit di semua negara, dengan margin di kisaran 58–61% dan return rate di bawah rata-rata. Kekuatan brand yang konsisten lintas pasar ini menjadikannya kandidat utama untuk alokasi trade marketing dan eksplorasi bundling dengan brand pendukung guna meningkatkan basket size per transaksi.
 
-- **Perbandingan Kinerja Bulan Ini vs Bulan Lalu:** Ada kenaikan signifikan pada volume transaksi dan profit bulan ini dibanding bulan sebelumnya, meski return rate mengalami penurunan. Kondisi ini mencerminkan potensi pertumbuhan yang cukup besar di pasar Meksiko.
+**3. Meksiko tumbuh signifikan sementara USA dan Kanada underperform terhadap target**
 
-- **Toko Berperforma Terbaik:** Toko di Hidalgo mencatat kinerja yang menonjol dengan volume transaksi tinggi dan profit yang signifikan. Menganalisis faktor-faktor yang mendorong performa toko ini dapat dimanfaatkan untuk mendongkrak kinerja toko-toko lain.
+Meksiko mencatatkan pertumbuhan MoM sebesar +28,34% transaksi dan +29,9% profit, melampaui target secara substansial, disertai penurunan return rate 27,74% di bawah target. Ini kontras dengan USA (-5,73% transaksi, -6,41% profit) dan Kanada (-3,89% transaksi, -5,39% profit) yang keduanya underperform. Penurunan di USA dan Kanada tidak disertai lonjakan return rate, mengindikasikan pelemahan demand — bukan masalah kualitas produk atau layanan.
 
-### Kanada
-- **10 Produk Teratas Berdasarkan Profit:** Meski total transaksi Kanada lebih rendah dibanding AS dan Meksiko, pola profitnya tetap serupa, dengan brand Ebony dan Hermanos di posisi teratas. Perusahaan perlu terus memaksimalkan kedua brand ini untuk meningkatkan profitabilitas.
+**4. Return rate sebagai leading indicator kualitas operasional**
 
-- **Perbandingan Kinerja Bulan Ini vs Bulan Lalu:** Volume transaksi dan profit bulan ini sedikit turun dibanding bulan sebelumnya. Namun, return rate justru menurun secara signifikan, yang mengindikasikan peningkatan kepuasan pelanggan atau pengelolaan retur yang semakin efisien.
+Kanada menunjukkan pola yang menarik: meski volume dan profit menurun, return rate justru turun 28,81% di bawah target. Ini mengindikasikan perbaikan operasional (fulfillment, packaging, atau quality control) yang berdampak positif mendahului pemulihan volume. Sebaliknya, Big Time — brand eksklusif di top 10 Kanada — mencatatkan return rate 1,67%, tertinggi di antara semua produk top ketiga pasar, dan perlu diinvestigasi lebih lanjut sebelum alokasi investasi dinaikkan.
 
-- **Toko Berperforma Terbaik:** Toko di Vancouver menunjukkan kinerja yang baik dengan volume transaksi tinggi dan profit yang cukup signifikan. Faktor-faktor keberhasilan toko ini bisa dijadikan acuan untuk meningkatkan performa toko-toko lain di Kanada.
+**5. Top-performing stores sebagai benchmark operasional**
 
-### Solusi Bisnis Umum
-- **Meningkatkan Pemasaran dan Promosi:** Mengingat adanya penurunan transaksi di AS dan Kanada, ada peluang untuk mengintensifkan upaya pemasaran dan promosi guna menarik lebih banyak pelanggan dan mendorong penjualan.
-- **Mengoptimalkan Manajemen Inventaris:** Menganalisis lebih lanjut pola penjualan dan permintaan dapat membantu mengoptimalkan manajemen inventaris, sehingga biaya dapat ditekan dan profitabilitas meningkat.
-- **Meningkatkan Pengalaman Pelanggan:** Memfokuskan diri pada peningkatan pengalaman pelanggan dapat membantu mempertahankan pelanggan yang ada sekaligus menarik pelanggan baru. Langkah-langkah yang bisa dilakukan antara lain meningkatkan layanan pelanggan, membuat kebijakan retur yang lebih fleksibel, dan mengoptimalkan proses pembelian secara keseluruhan.
+Salem (USA), Hidalgo (Meksiko), dan Vancouver (Kanada) secara konsisten memimpin di masing-masing pasar. Salem mencatatkan return rate terendah (0,94%), Hidalgo memimpin dalam skala volume (52.888 unit terjual), dan Vancouver memimpin profitabilitas Kanada dengan $50.955 profit. Praktik operasional ketiga toko ini berpotensi untuk direplikasi secara sistematis ke toko-toko dengan performa di bawah rata-rata.
+
+---
+
+### Business Recommendations
+
+| # | Area | Rekomendasi | Prioritas |
+|---|------|-------------|-----------|
+| 1 | Revenue Recovery | Tinjau kembali strategi promosi dan penawaran di pasar USA dan Kanada untuk mendorong kembali minat beli pelanggan, mengingat penurunan yang terjadi bukan disebabkan oleh masalah kualitas produk. | Tinggi |
+| 2 | Growth Replication | Pelajari dan terapkan pendekatan penjualan yang berhasil di Meksiko — baik dari sisi promosi, penempatan produk, maupun hubungan dengan mitra distribusi — ke pasar USA dan Kanada. | Tinggi |
+| 3 | Portfolio Focus | Perkuat ketersediaan dan visibilitas Hermanos dan Ebony di seluruh toko, pastikan kedua brand ini selalu tersedia dalam stok yang cukup dan mendapat penempatan terbaik di rak. | Sedang |
+| 4 | Product Review | Tinjau kembali kelayakan Big Time di pasar Kanada mengingat tingkat retur yang tinggi, dan pertimbangkan untuk melakukan evaluasi kepuasan pelanggan terhadap produk ini sebelum menambah volume pengadaan. | Sedang |
+| 5 | Store Performance | Jadikan Salem, Hidalgo, dan Vancouver sebagai referensi pengelolaan toko terbaik, dan dorong kepala toko di wilayah lain untuk mengadopsi cara kerja yang sama dalam mengelola stok dan melayani pelanggan. | Rutin |
